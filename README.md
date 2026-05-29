@@ -33,5 +33,5 @@ The model outputs the following:
 The results for the best model with hyperparameters listed in the "Model Architecture" section are:
   - Train accuracy: 0.9986 , loss: 0.0045
   - Validation accuracy: 0.9882 , loss: 0.0566
-  - Test accuracy: 0.9854
+  - Test accuracy: 0.9854 , loss: 0.0620
 
