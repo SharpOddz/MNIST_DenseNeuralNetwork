@@ -14,7 +14,7 @@ The model hyperparameters can be easily adjusted, however the best results are w
  - Dropout rate: 0.2
  - Btach size: 32
  - Batch normalization
- - Relu activations
+ - ReLU activations
  - L1 regularization turned off
  - L2 regularization on with reg_weight of 0.001
  - Model Architecture: (784->512->256-128->64->10)
