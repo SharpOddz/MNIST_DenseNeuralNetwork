@@ -98,6 +98,15 @@ history = model.fit(
     verbose=1
 )
 
+#Evaluation (IMPORTANT: Only test on the test set once the hyperparameters are chosen)
+train_metrics = model.evaluate(x_train, y_train, verbose=0)
+val_metrics = model.evaluate(x_val, y_val, verbose=0)
+#test_metrics = model.evaluate(x_test, y_test, verbose=0)
+
+print(f"Train Loss: {train_metrics[0]:.4f}, Train Accuracy: {train_metrics[1]:.4f}")
+print(f"Val Loss:   {val_metrics[0]:.4f}, Val Accuracy:   {val_metrics[1]:.4f}")
+#print(f"Test Loss:  {test_metrics[0]:.4f}, Test Accuracy:  {test_metrics[1]:.4f}")
+
 #Plotting
 best_epoch = history.history['val_loss'].index(min(history.history['val_loss']))
 fig, axes = plt.subplots(1, 2, figsize=(14, 5))
