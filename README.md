@@ -33,7 +33,7 @@ The model outputs the following:
 ## Results
 The results for the best model with hyperparameters listed in the "Model Architecture" section are provided below.
 
-The model trained for 20 
+The model trained for 20 epochs without calling back to a better version
   - Train accuracy: 0.9963 , loss: 0.0119
   - Validation accuracy: 0.9857 , loss: 0.0526
   - Test accuracy: 0.9840 , loss: 0.0572
