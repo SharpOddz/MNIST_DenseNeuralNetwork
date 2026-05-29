@@ -12,9 +12,11 @@ The model hyperparameters can be easily adjusted, however the best results are w
  - Epochs: 20
  - Learning rate: 0.001 with reduction by factor of 0.2 if 3 epochs without validation loss (minimum learning rate of 0.00001)
  - Dropout rate: 0.2
+ - Btach size: 32
  - Batch normalization
  - Relu activations
- - L1 and L2 regularization turned off
+ - L1 regularization turned off
+ - L2 regularization on with reg_weight of 0.001
  - Model Architecture: (784->512->256-128->64->10)
  - Loss: sparse categorical cross entropy
  - Optimizer: Adam
