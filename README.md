@@ -15,8 +15,7 @@ The model hyperparameters can be easily adjusted, however the best results are w
  - Btach size: 32
  - Batch normalization
  - ReLU activations
- - L1 regularization turned off
- - L2 regularization on with reg_weight of 0.001
+ - L1 and L2 regularization turned off
  - Model Architecture: (784->512->256-128->64->10)
  - Loss: sparse categorical cross entropy
  - Optimizer: Adam
@@ -32,8 +31,12 @@ The model outputs the following:
   - Plots for training and validation loss and accuracy over the training process (red dotted line signifies the best model run)
 
 ## Results
-The results for the best model with hyperparameters listed in the "Model Architecture" section are:
-  - Train accuracy: 0.9986 , loss: 0.0045
-  - Validation accuracy: 0.9882 , loss: 0.0566
-  - Test accuracy: 0.9854 , loss: 0.0620
+The results for the best model with hyperparameters listed in the "Model Architecture" section are provided below.
+
+The model trained for 20 
+  - Train accuracy: 0.9963 , loss: 0.0119
+  - Validation accuracy: 0.9857 , loss: 0.0526
+  - Test accuracy: 0.9840 , loss: 0.0572
+
+The training plot is provided in the repository
 
